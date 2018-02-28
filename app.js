@@ -20,13 +20,13 @@ rl.on("line", reply =>{
    matcher(reply, data => {
     switch (data.intent) {
         case 'Hello':
-            console.log("A big hello from Marcelia");
+            console.log(`${data.entities.greeting} to you too`);
             rl.prompt();
             break;
         case'Exit':
             console.log("Have a good one");
             process.exit(0);
-            
+
         default:{
             console.log("I don't know what you mean !!! Can you tell me more clearly");
             rl.prompt();
