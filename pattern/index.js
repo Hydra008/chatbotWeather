@@ -3,7 +3,7 @@ const patternDictionary = [{
     pattern : "\\b(Hi|Hello|hey|ola)\\b",
     intent:"Hello"
 },{
-    pattern:"b(bye|exit|goodbye|cya)\\b",
+    pattern:"\\b(bye|exit|goodbye|cya)\\b",
     intent:"Exit"
 }];
 

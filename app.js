@@ -23,7 +23,11 @@ rl.on("line", reply =>{
             console.log("A big hello from Marcelia");
             rl.prompt();
             break;
-        default: {
+        case'Exit':
+            console.log("Have a good one");
+            process.exit(0);
+            
+        default:{
             console.log("I don't know what you mean !!! Can you tell me more clearly");
             rl.prompt();
         }
