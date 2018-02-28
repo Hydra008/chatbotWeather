@@ -1,0 +1,17 @@
+{
+  "name": "chatbotweather",
+  "version": "1.0.0",
+  "description": "A rule based chat bot that provides weather information when requested",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "chatbot",
+    "weatherbot",
+    "rule-based",
+    "bot"
+  ],
+  "author": "Karan Shah",
+  "license": "ISC"
+}
