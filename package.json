@@ -13,5 +13,8 @@
     "bot"
   ],
   "author": "Karan Shah",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "xregexp": "^4.1.1"
+  }
 }

@@ -1,6 +1,7 @@
 'use strict';
 
 const Readline = require("readline");
+const matcher  = require("./matcher");
 
 //creates a REPL instance with commandline as stdin and std out
 //terminal is set to false to avoid it to behave like normal tele type  which echoes back user input
@@ -16,6 +17,16 @@ rl.setPrompt('> ');
 rl.prompt();
 //line is an inbuilt event which is called at the end of line
 rl.on("line", reply =>{
-   console.log(`you said ${reply}`);
-   rl.prompt();
+   matcher(reply, data => {
+    switch (data.intent) {
+        case 'Hello':
+            console.log("A big hello from Marcelia");
+            rl.prompt();
+            break;
+        default: {
+            console.log("I don't know what you mean !!! Can you tell me more clearly");
+            rl.prompt();
+        }
+    }
+   });
 });
